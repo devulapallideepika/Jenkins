@@ -20,3 +20,9 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 - sudo apt-get update
 - sudo apt-get install jenkins
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/142a7c20-1fac-4d72-8c66-4086a229afb5)
+- Allow the inbound rule with port 8080 as jenkins by default runs on port 8080.
+- To know the administration password the command is sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/afe87c0f-5ae0-44ba-886d-f128fa9b42a9)
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/4b2ed89c-4133-462e-8584-9ab33bd8de34)
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/9a03ee15-ba15-4b06-8742-40efe3ca345f)
+  
