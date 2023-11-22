@@ -28,6 +28,8 @@
 - command to install docker
 - sudo apt update
 - sudo apt install docker.io
+- ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/87ddf889-1e6d-4c56-b132-fbf600f12c29)
+
 ## Grant Jenkins user and Ubuntu user permission to docker deamon.
 - sudo su - 
 - usermod -aG docker jenkins
@@ -43,12 +45,28 @@
  ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/9ba0e17f-c3ff-4302-b849-bcf9aa8fc463)
 
  -unzip *
- -chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
- -chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
- -cd sonarqube-9.4.0.54424/bin/linux-x86-64/
- -./sonar.sh start
+ - chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
+ - chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
+ - cd sonarqube-9.4.0.54424/bin/linux-x86-64/
+ - ./sonar.sh start
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/9460bf93-3f99-495b-985f-f11d4aede3de)
 - Access the SonarQube Server on http://<ip-address>:9000
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/ae893bb2-bd29-4741-82cb-39c5bb010d13)
 
-
+## install necessary plugins in jenkins
+- install docker-pipeline plugin 
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/c2126938-faf9-4704-8a41-a07d240e7c14)
+- install sonarqube scanner plugin
+ ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/30e5dca6-024a-4e75-a262-fddfa5e0d268)
+## Given global credientials in jenkins
+- docker username & password given as credientials
+ ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/ed0ad708-4bc9-42b2-89c3-25f52fc72c34)
+- github token given as secret text
+ ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/7b2d4f08-c124-4513-bca8-e16493daf199)
+- sonarqube token given as secret text
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/ad68d3a9-e09a-47f4-97b6-38ae0c542a8b)
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/1de6f352-d30b-4ba8-8424-90f3c2215957)
+![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/e562ff78-2330-44be-835f-a2d36bff6451)
+ 
+ 
+ 
