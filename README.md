@@ -110,10 +110,10 @@
 ## install awscli
 - commands to install awscli  
 - Refer--https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-$ sudo su
-$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-$ apt install unzip,   $ unzip awscliv2.zip
-$ sudo ./aws/install
+- $ sudo su
+- $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+- $ apt install unzip,   $ unzip awscliv2.zip
+- $ sudo ./aws/install
          
  ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/ba6640ce-050e-425f-9aa5-4f8d8f613db1)
  
@@ -122,40 +122,41 @@ $ sudo ./aws/install
 ## install kubectl
 - commands to install kubectl
 - Refer--https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html
-$ sudo su
-$ curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
-$ ll , $ chmod +x ./kubectl  //Gave executable permisions
-$ mv kubectl /bin   //Because all our executable files are in /bin
-$ kubectl version --output=yaml
+- $ sudo su
+- $ curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.27.1/2023-04-19/bin/linux/amd64/kubectl
+- $ ll , $ chmod +x ./kubectl  //Gave executable permisions
+- $ mv kubectl /bin   //Because all our executable files are in /bin
+- $ kubectl version --output=yaml
 
  ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/7091fad6-9450-4d14-89d2-78bd5554480a)
  
 ## install eksctl
 - Refer--https://github.com/eksctl-io/eksctl/blob/main/README.md#installation
-$ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-$ cd /tmp
-$ ll
-$ sudo mv /tmp/eksctl /bin
-$ eksctl version
+- $ curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+- $ cd /tmp
+- $ ll
+- $ sudo mv /tmp/eksctl /bin
+- $ eksctl version
 
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/b2cbfae9-19d9-4c19-a09c-fe10ffa675e0)
 
  - create eks cluster
+   
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/95cf228f-b45a-4268-b478-7c123cf74fda)
 
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/af55e82f-5181-4a77-afb0-3441b495eefd)
 
 ## ARGOCD installation in eksctl
--commands to install argocd
-$ kubectl create namespace argocd
-$ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-$ kubectl get pods -n argocd
-$ curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.4.7/argocd-linux-amd64
-$ chmod +x /usr/local/bin/argocd
-$ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
-$ kubectl get svc -n argocd
-$ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
-$ echo XXXXXXX | base64 --decode
+- commands to install argocd
+- $ kubectl create namespace argocd
+- $ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+- $ kubectl get pods -n argocd
+- $ curl --silent --location -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/download/v2.4.7/argocd-linux-amd64
+- $ chmod +x /usr/local/bin/argocd
+- $ kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+- $ kubectl get svc -n argocd
+- $ kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
+- $ echo XXXXXXX | base64 --decode
 
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/40eaba87-e7d2-459b-9e8f-6341cc7c895c)
 
@@ -214,9 +215,12 @@ $ echo XXXXXXX | base64 --decode
 
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/e08d6a60-0694-40f5-97b5-fddd8dbf093b)
 
-=============================================================================================================================================================================================================
+****************************************************************************************************************************************************************************** 
+******************************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************************
 
-***************************************************## DEPLOYING APPLICATION USING DOCKER ************************************************************************************************
+## Deploying application using Docker
+
 - packaging the code using mvn clean package command
   
 ![image](https://github.com/devulapallideepika/Jenkins/assets/129947829/f6003c60-06de-4036-8877-1996569498c6)
